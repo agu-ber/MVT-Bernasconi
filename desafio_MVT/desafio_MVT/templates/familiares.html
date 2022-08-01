@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío MVT - Familiares</title>
+</head>
+<body>
+    
+    {% for familiar in familiares %}
+        <h1 style="margin-bottom: auto; max-width: fit-content; background-color: black; color: gold; font-size: medium">{{familiar.nombre}} {{familiar.apellido}}</h1>
+        <p style="margin-top: auto; margin-bottom: auto">Es mi {{familiar.parentesco}}</p>
+        <p style="margin-top: auto; margin-bottom: auto">Nació el {{familiar.fecha_nacimiento}}</p>
+        <p style="margin-top: auto; margin-bottom: auto">Su teléfono es {{familiar.telefono}} y su correo {{familiar.correo}}</p>
+
+        {% if familiar.es_casado %}
+            <p style="margin-top: auto; margin-bottom: auto">Está casado</p>
+        {% else %}
+            <p style="margin-top: auto; margin-bottom: auto">No está casado</p>
+        {% endif %}
+
+    {% endfor %}
+
+</body>
+</html>
