@@ -54,7 +54,7 @@ ROOT_URLCONF = 'desafio_MVT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"C:\Agu\coding\python\django\desafio_MVT\desafio_MVT\desafio_MVT\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
